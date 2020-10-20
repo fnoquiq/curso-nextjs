@@ -15,14 +15,14 @@ export default function Top10({ products }: Top10Props) {
       <h1>Top 10</h1>
 
       <ul>
-          {products.map(recommendedProduct => {
-            return (
-              <li key={recommendedProduct.id}>
-                {recommendedProduct.title}
-              </li>
-            )
-          })}
-        </ul>
+        {products.map(recommendedProduct => {
+          return (
+            <li key={recommendedProduct.id}>
+              {recommendedProduct.title}
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }
